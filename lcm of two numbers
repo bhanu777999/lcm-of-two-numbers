@@ -1,8 +1,14 @@
 a= int(input("enter a number : "))
 b= int(input("enter a number : "))
-if (a%2==0 and b%2==0):# if two numbers are even
-    print((a*b)//2)
+
+if (a%b==0):
+    print("lcm = ",a)
+elif (b%a==0):
+    print("lcm = ",b)    
+elif (a%2==0 and b%2==0) :# if two numbers are even
+     print("lcm = ",(a*b)//2)
+
 elif ((a%2==0 or a%5==0) and (b%2!=0 or b%5!=0) or (b%2==0 or b%5==0) and (a%2!=0 or a%5!=0)):#if one of the number is even
-    print(a*b)
+    print("lcm  = ",a*b)
 else:
-    print(a*b)
+    print("lcm  = ",a*b)
